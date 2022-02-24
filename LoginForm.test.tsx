@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import userEvent  from '@testing-library/user-event'
 import App from './LoginForm';
 
-test('renders learn react link', () => {
+test('should render LoginForm correctly', () => {
   const onFormSubmitted = jest.fn( () => {});
   render(<App onFormSubmitted={onFormSubmitted} />);
   const username = screen.getByText(/username/i);
